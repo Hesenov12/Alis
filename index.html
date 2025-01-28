@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script type="text/javascript">
+	if ('0' == '1') {
+		window.onerror = function (errorMsg, url, lineNumber) {
+			var s = '';
+			s += "Javascript error!";
+			s += "\n----------------------------------------\n";
+			s += errorMsg;
+			s += "\nFile : " + url;
+			s += "\nLine : " + lineNumber;
+			alert(s);
+		}
+	}
+</script>
+<meta charset="utf-8" />
+<title>İmtahan Nəticələri | </title>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+
+<meta name="author" content="www.efendiyev.com">
+<meta name="x-Developer" content="Mezahir Efendiyev <support [-at-] efendiyev [-dot-] com>">
+
+<link href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/css/vendor.min.css" rel="stylesheet" />
+<link href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/css/style_transparent/app.min.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/select2/dist/css/select2.min.css" />
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" />
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/bootstrap-social/bootstrap-social.css" />
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/spectrum-colorpicker2/dist/spectrum.min.css" />
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/jstree/dist/themes/default/style.min.css" />
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.min.css" />
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/flag-icon-css/css/flag-icons.min.css" />
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/extra/fontawesome/css/all.min.css" />
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/extra/toastr/build/toastr.min.css" />
+
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/sapi/default/css/overwrite.css">
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/sapi/default/css/overwrite_style_transparent.css">
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/sapi/default/css/custom.css">
+<link rel="stylesheet" href="https://netice.commonfiles.net/frq-templates/sapi/current/extra.css">
+
+<link rel="icon" type="image/png" href="https://netice.commonfiles.net/frq-templates/sapi/current/favicon.png" />
+
+
+
+<style>
+body .body-inner {
+		padding: 0;
+		margin: 0;
+		background-color: rgba(255, 255, 255, 0.00);
+	}
+
+	@media (max-width: 991.98px) {
+		body .body-inner {
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	.fullscreen {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		-webkit-box-align: center !important;
+		-ms-flex-align: center !important;
+		-webkit-align-items: center !important;
+		align-items: center !important;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		min-height: 100vh;
+	}
+
+	.fullscreen .container, .fullscreen .container-wide {
+		-ms-flex-preferred-size: 0;
+		-webkit-flex-basis: 0;
+		flex-basis: 0;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+		margin-top: 80px;
+		margin-bottom: 40px;
+	}
+
+	.fullscreen .container-fullscreen {
+		width: 100%;
+	}
+
+	.fullscreen {
+		background: url(https://www.sinaqnetice.com/frq-content/visitorMAN/images/20241010153127_81093500.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	.fullscreen .container {
+		margin-top: 10px;
+	}
+
+	.fullscreen .container-fullscreen {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	.fullscreen .container-fullscreen .text-middle {
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		margin: auto;
+	}
+
+	.block-content {
+		border-radius: 8px;
+		background-color: rgba(255, 255, 255, 0.00)!important;
+		padding: 10px 10px!important;
+		padding-top: 20px;
+	}
+
+	@media (min-width: 1000px) {
+		.block-content {
+			width: 600px;
+		}
+	}
+
+	@media screen and (min-width:768.01px) and (max-width:999.99px) {
+		.block-content {
+			min-width: 550px;
+		}
+	}
+
+	h1 {
+		color: #ffffff!important;
+	}
+
+	h4 {
+		color: #ffffff!important;
+	}
+
+	.form-control  {
+		color: #ffffff!important;
+	}
+
+	.form-select {
+		color: #ffffff!important;
+	}
+
+	.form-select.notselected {
+		font-style: italic;
+		color: #ffffff!important;
+	}
+
+	::placeholder {
+		font-style: italic;
+		color: #ffffff!important;
+		font-weight: normal;
+	}
+</style>
+</head>
+<body>
+	<!-- (+bg-white) -->
+	<div id="app" class="app app-content-full-height app-without-sidebar app-without-header">
+
+		
+
+
+<div class="body-inner">
+	<section class="fullscreen">
+		<div class="container container-fullscreen">
+			<div class="text-middle">
+				<div class="row">
+					<div class="col-lg-12 center p-15">
+						<div class="block-content">
+							<h1 class="text-center">İmtahan nəticələri</h1>
+							<h4 class="text-center">Sınaq adını seçin, iş nömrənizi düzgün daxil edin. Əgər nəticəniz çıxmırsa, sinif, qrup, altqrup, bölmə və ya variant kimi əhəmiyyətli məlumatlardan birində xəta etmisiniz deməkdir. İmtahan bileti aldığınız kursa müraciət edərək düzəliş etdirə bilərsiniz. Hər birinizə uğurlar arzu edirik!</h4>
+							<br>
+							<div rel="FRQ_MENUCONTENT" class="FRQ_MENUCONTENT_class">
+								<ol class="breadcrumb float-xl-end">
+	
+</ol>
+
+
+
+
+
+
+
+<div class="clearfix">&nbsp;</div>
+
+<div class="clearfix">&nbsp;</div>
+
+
+
+<!--BLOCKS_FULL-->
+
+<div class="row">
+	
+		<div class="col-xl-12">
+			
+				<div class="tab-content panel rounded-0 p-3 m-0 mb-4">
+					<div class="tab-pane fade active show" id="block_1_1_1">
+						<form action="https://www.sinaqnetice.com/index.php?menu=resultMAN&opt=participant" name="FRQ_CURRENTFORM" method="post" class="form_dyncontent_record">
+
+	<div class='row'><div class='col-md-12'>
+		<div class="row p-1">
+			
+			<div class="col-md-12">
+				<div class="row">
+					<!--label-->
+					<label class="form-label col-form-label d-none " for="examinationID">
+						İMTAHAN
+						<!--isrequired--><span class="text-danger">*</span><!--/isrequired-->
+					</label>
+					<!--/label-->
+					<div class="col-md-12">
+						<div class="row"><div class="col-md-12">
+	<select class="form-select " name="examinationID" id="examinationID" rel="reload_on_change" data-singleValidation="focusout"><option value="">İMTAHAN</option>
+<option value="221">DƏYƏR - Buraxılış - Sınaq 4</option>
+<option value="222">DƏYƏR - TKML (5-6-7-8) - Sınaq 4</option>
+<option value="223">DƏYƏR - Yarrakio (1-2-3-4) - sınaq 4</option>
+<option value="218">GÜVƏN - Raya - Sınaq 5</option>
+<option value="220">GÜVƏN - Sabirə - Sınaq 5</option>
+<option value="219">GÜVƏN - Rus bölməsi Ana dili - Rus bölməsi Azərbaycan dili sınağı - 2</option></select>
+	
+<div rel="error_div" id="examinationID_error" class="text-danger"></div></div></div>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	
+		<div class="row p-1">
+			
+			<div class="col-md-12">
+				<div class="row">
+					<!--label-->
+					<label class="form-label col-form-label d-none " for="participant_regcode">
+						İŞ NÖMRƏSİ
+						<!--isrequired--><span class="text-danger">*</span><!--/isrequired-->
+					</label>
+					<!--/label-->
+					<div class="col-md-12">
+						<div class="row"><div class="col-md-12">
+	<input type="text" class="form-control " name="participant_regcode" id="participant_regcode" value="" data-mask=""  placeholder="7 rəqəmli iş nömrəsini daxil edin" data-singleValidation="focusout" autocomplete="Off">
+	
+<div rel="error_div" id="participant_regcode_error" class="text-danger"></div></div></div>
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	</div></div>
+
+	
+
+
+	<div class="row pt-3">
+		<div class="col-md-12">
+			<div class="row">
+				<label class="form-label col-form-label col-md-3">
+				</label>
+				<div class="col-md-9">
+					<!--submit_button-->
+					<button type="submit" rel="submit_button" class="btn btn-primary btn-xs">
+						<i class="fa-solid fa-check"></i>
+						NƏTİCƏYƏ BAX
+					</button>
+					<!--/submit_button-->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<input type="hidden" name="operationType">
+	<input type="hidden" name="operationValue">
+	<input type="hidden" name="FRQ_CURRENTFORM_TOKEN_POST" value="5fb91579860b5707233d482d747b4ba0f01045db">
+	<input type="hidden" name="FRQ_CURRENTFORM_TOKEN_RELOAD" value="5fb91579860b5707233d482d747b4ba0f01045db">
+</form>
+					</div>
+				</div>
+			
+		</div>
+	
+</div>
+
+<!--/BLOCKS_FULL-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+	</div>
+
+	<div id="sys_modal_info" class="modal fade" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Modal Dialog</h4>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+			</div>
+			<div class="modal-body">
+				<p>
+					Modal body content here...
+				</p>
+			</div>
+			<!--
+			<div class="modal-footer">
+				<a href="javascript:;" class="btn btn-white" data-bs-dismiss="modal" rel="button_cancel">Close</a>
+				<a href="javascript:;" class="btn" rel="button_submit">Action</a>
+			</div>
+			-->
+		</div>
+	</div>
+</div>
+
+<div id="sys_modal_confirmation" class="modal fade" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Modal Dialog</h4>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+			</div>
+			<div class="modal-body">
+				<p>
+					Modal body content here...
+				</p>
+			</div>
+			<div class="modal-footer">
+				<a href="javascript:;" class="btn btn-white" data-bs-dismiss="modal" rel="button_cancel">Close</a>
+				<a href="javascript:;" class="btn" rel="button_submit">Action</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="system_modal_shell"></div>
+
+
+
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/js/vendor.min.js"></script>
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/js/app.min.js"></script>
+
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/select2/dist/js/select2.min.js"></script>
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/spectrum-colorpicker2/dist/spectrum.min.js"></script>
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/jstree/dist/jstree.min.js"></script>
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+<script src="https://netice.commonfiles.net/frq-templates/themes/coloradmin/assets/extra/toastr/build/toastr.min.js"></script>
+
+
+
+<script type="text/javascript">
+/**
+	 * Params
+	 *
+	 */
+
+	const ICON_URLCHANGE = 'fa-solid fa-arrows-spin fa-spin';
+	const ICON_AJAXPOST = 'fa-solid fa-spinner fa-spin';
+	const ICON_AJAXCONTENT = 'fa-solid fa-circle-notch fa-spin';
+	const ICON_VALIDATION = 'fa-solid fa-asterisk fa-spin fa-spin-reverse';
+
+	var $LAST_FRQ_CURRENTFORM;
+
+	/**
+	 * Loading div
+	 *
+	 */
+
+	function j_frq_loadingDiv(flag) {
+
+		if (flag) {
+		} else {
+		}
+	}
+
+	/**
+	 * Ajax content
+	 *
+	 */
+
+	function j_frq_ajaxContent(url) {
+		var post_url = url;
+		var post_data = 'innopt=-1&ajax=1';
+
+		$.ajax({
+
+			type: "POST",
+			url: post_url,
+			data: post_data,
+			beforeSend: function (xhr) {
+			},
+			success: function (response) {
+
+				if (typeof response == "object") {
+					alert("[ajax content] Object returned:\n" + JSON.stringify(response));
+
+				} else if ((response.indexOf('--redirect-url--')===0) || (response.indexOf('--redirect-ajax--')===0)) {
+
+					if (response.indexOf('--redirect-ajax--')===0) {
+						j_frq_ajaxContent(response.replace('--redirect-ajax--', ''));
+					} else {
+						document.location.href = response.replace('--redirect-url--', '');
+					}
+
+				} else {
+					$("[rel=FRQ_MENUCONTENT]").html('').html(response);
+					$('#sys_modal_confirmation').modal('hide');
+				}
+			}
+		});
+	}
+
+	/**
+	 * Load modal content
+	 *
+	 */
+
+	function j_frq_loadModalContent(url, $button) {
+
+		var post_url = url;
+		var post_data = 'innopt=-2&ajax=1';
+
+		var $modal = $("#sys_modal_info");
+		$modal.find('.modal-title').html($button.attr('data-openModal-winTitle'));
+		var size = $button.attr('data-openModal-opt');
+
+		if (size=="small") {
+			size = "modal-sm";
+		} else if (size=="large") {
+			size = "modal-lg";
+		}else if (size=="xlarge") {
+			size = "modal-xl";
+		} else {
+			size = "";
+		}
+
+		$modal.find(">div").attr("class", "modal-dialog "+size);
+		$modal.modal('show');
+
+		$.ajax({
+
+			type: "POST",
+			url: post_url,
+			data: post_data,
+			beforeSend: function (xhr) {
+			},
+			success: function (response) {
+
+				if (typeof response == "object") {
+					alert("[ajax content] Object returned:\n" + JSON.stringify(response));
+
+				} else if ((response.indexOf('--redirect-url--')===0) || (response.indexOf('--redirect-ajax--')===0)) {
+
+					if (response.indexOf('--redirect-ajax--')===0) {
+						j_frq_ajaxContent(response.replace('--redirect-ajax--', ''));
+					} else {
+						document.location.href = response.replace('--redirect-url--', '');
+					}
+
+				} else {
+					$(".modal-body", "#sys_modal_info").html('').html(response);
+				}
+			}
+		});
+	}
+
+	/**
+	 * Button action
+	 *
+	 */
+
+	function j_frq_buttonAction($button) {
+
+		$LAST_FRQ_CURRENTFORM = $button.closest("[name=FRQ_CURRENTFORM]");
+		if ((typeof $LAST_FRQ_CURRENTFORM == "undefined") || (!$LAST_FRQ_CURRENTFORM.length)) {
+			$LAST_FRQ_CURRENTFORM = $("[name=FRQ_CURRENTFORM]").eq(0);
+		}
+
+		var append = '';
+		if ((typeof $button.attr('data-relatedInputs') != "undefined") && ($button.attr('data-relatedInputs')!='')) {
+
+			var $selected = $LAST_FRQ_CURRENTFORM.find($button.attr('data-relatedInputs'));
+			if (!$selected.length) {
+				swal({
+					html: true,
+					title: '',
+					text: 'Ən az bir qeydiyyat seçin.',
+					icon: 'error',
+					buttons: {
+						cancel: {
+							text: 'OK',
+							value: null,
+							visible: true,
+							className: 'btn btn-default',
+							closeModal: true
+						}
+					}
+				});
+				return false;
+			}
+
+			xName = $selected.eq(0).attr('name');
+			if (xName.indexOf("[")>0) {
+				xName = xName.substr(0, xName.indexOf("["));
+			}
+			$selected.each(function () {
+				append += $(this).val()+",";
+			});
+			append = "&"+xName+"="+encodeURIComponent(append);
+		}
+
+		var post_url = 'https://www.sinaqnetice.com/index.php?menu=resultMAN&opt=participant';
+		var post_data = 'innopt=-1&ajax='+encodeURIComponent($button.attr('data-isAjax'))+
+						'&operationType='+encodeURIComponent($button.attr('data-operationType'))+
+						'&operationValue='+encodeURIComponent($button.attr('data-operationValue'))+
+						'&FRQ_CURRENTFORM_TOKEN_POST='+encodeURIComponent('5fb91579860b5707233d482d747b4ba0f01045db')+
+						append;
+
+		$.ajax({
+
+			type: "POST",
+			url: post_url,
+			data: post_data,
+			beforeSend: function (xhr) {
+				j_frq_loadingDiv(true);
+
+				$button.attr('data-initial-content', $button.html());
+
+				if ($button.find('i').length) {
+					$button.find('i').attr('class', ICON_AJAXPOST);
+				} else {
+					$button.html('<i class="'+ICON_AJAXPOST+'"></i>');
+				}
+			},
+			success: function (response) {
+
+				if (typeof response == "object") {
+					alert("[button action] Object returned:\n" + JSON.stringify(response));
+
+				} else if ((response.indexOf('--redirect-url--')===0) || (response.indexOf('--redirect-ajax--')===0)) {
+
+					if (response.indexOf('--redirect-ajax--')===0) {
+
+						$button.find('i').attr('class', ICON_AJAXCONTENT);
+						j_frq_ajaxContent(response.replace('--redirect-ajax--', ''));
+
+					} else {
+
+						if ($button.attr('data-restorespin')) {
+							$button.html($button.attr('data-initial-content'));
+							j_frq_loadingDiv(false);
+						} else {
+							$button.find('i').attr('class', ICON_URLCHANGE);
+						}
+
+						document.location.href = response.replace('--redirect-url--', '');
+					}
+
+				} else {
+					$("[rel=FRQ_MENUCONTENT]").html('').html(response);
+				}
+			}
+		});
+	}
+
+	/**
+	 * Button confirm
+	 *
+	 */
+
+	function j_frq_buttonConfirm($button) {
+
+		$LAST_FRQ_CURRENTFORM = $button.closest("[name=FRQ_CURRENTFORM]");
+		if ((typeof $LAST_FRQ_CURRENTFORM == "undefined") || (!$LAST_FRQ_CURRENTFORM.length)) {
+			$LAST_FRQ_CURRENTFORM = $("[name=FRQ_CURRENTFORM]").eq(0);
+		}
+
+		var $modal = $("#sys_modal_confirmation");
+		$modal.find('.modal-title').html($button.attr('data-confirm-title'));
+		$modal.find('.modal-body').html($button.attr('data-confirm-text'));
+		$modal.find('[rel=button_cancel]').html($button.attr('data-button-cancel-text'));
+
+		var $modal_button = $modal.find('[rel=button_submit]');
+
+		if (typeof $modal_button.attr('prevAddeddClass') !== 'undefined') {
+			$modal_button.removeClass($modal_button.attr('prevAddeddClass'));
+		}
+		$modal_button.addClass($button.attr('data-button-submit-class')).html($button.attr('data-button-submit-text'));
+		$modal_button.attr('prevAddeddClass', $button.attr('data-button-submit-class'));
+
+		$modal_button.attr('data-isAjax', $button.attr('data-isAjax'));
+		$modal_button.attr('data-operationType', $button.attr('data-operationType'));
+		$modal_button.attr('data-operationValue', $button.attr('data-operationValue'));
+		if (typeof $button.attr('data-relatedInputs') != "undefined")  {
+			$modal_button.attr('data-relatedInputs', $button.attr('data-relatedInputs'));
+			var str = $modal.find('.modal-body').html();
+			str = str.replace('TOTAL-COUNT', $LAST_FRQ_CURRENTFORM.find($button.attr('data-relatedInputs')).length);
+			$modal.find('.modal-body').html(str);
+		} else {
+			$modal_button.attr('data-relatedInputs', '');
+		}
+
+		$modal.modal('show');
+
+		$modal_button.off('click').on('click', function (e) {
+
+			e.preventDefault();
+
+			var post_url = $LAST_FRQ_CURRENTFORM.attr('action');
+			var post_data = 'innopt=-1&ajax='+encodeURIComponent($(this).attr('data-isAjax'))+
+							'&operationType='+encodeURIComponent($(this).attr('data-operationType'))+
+							'&operationValue='+encodeURIComponent($(this).attr('data-operationValue'))+
+							'&FRQ_CURRENTFORM_TOKEN_POST='+encodeURIComponent( $("[name=FRQ_CURRENTFORM_TOKEN_POST]", $LAST_FRQ_CURRENTFORM).val() );
+
+
+			if ((typeof $(this).attr('data-relatedInputs') != "undefined") && ($(this).attr('data-relatedInputs')!='')) {
+
+				var $selected = $LAST_FRQ_CURRENTFORM.find($(this).attr('data-relatedInputs'));
+				var distinct_names = [];
+				var distinct_values = [];
+				if ($selected.length) {
+
+					$selected.each(function () {
+						var name = $(this).attr('name');
+						if (name.indexOf("[")>0) {
+							name = name.substr(0, name.indexOf("["));
+						}
+						if (!distinct_names.includes(name)) {
+							distinct_names[distinct_names.length] = name;
+							distinct_values[name] = "";
+						}
+						distinct_values[name] += encodeURIComponent($(this).val())+",";
+					});
